@@ -3,32 +3,38 @@ $default: #8d8d8d;
 $title: #29282d;
 $bg: #f6f6f6;
 
-
 %quicksand-400 {
-    font-family: 'Quicksand-Regular', sans-serif;
-    font-weight: 400;
+  font-family: "Quicksand-Regular", sans-serif;
+  font-weight: 400;
 }
 
 %quicksand-500 {
-    font-family: 'Quicksand-medium', sans-serif;
-    font-weight: 500;
+  font-family: "Quicksand-medium", sans-serif;
+  font-weight: 500;
 }
 
 %roboto-400 {
-    font-family: 'Roboto-Regular', sans-serif;
-    font-weight: 400;
+  font-family: "Roboto-Regular", sans-serif;
+  font-weight: 400;
 }
 
 %roboto-700 {
-    font-family: 'Roboto-Bold', sans-serif;
-    font-weight: 700;
+  font-family: "Roboto-Bold", sans-serif;
+  font-weight: 700;
 }
 
 %btn {
-    padding: 12px 26px;
-    text-transform: uppercase;
-    color: #fff;
-    box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
-    background-color: $accent;
-    @extend %roboto-400;
+  padding: 12px 26px;
+  text-transform: uppercase;
+  color: #fff;
+  box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
+  background-color: $accent;
+  @extend %roboto-400;
+}
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
 }
